@@ -28,6 +28,7 @@ public abstract class MagnitudFisica extends UnidadDeMedida implements Conversor
     public MagnitudFisica(double cifra, String abrev) {
         this.cifra = cifra;
         this.abreviatura = abrev;
+        getSistema().agregarUnidad(this);
     }
 
     public double getCifra() {

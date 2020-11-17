@@ -2,6 +2,7 @@ package sondaEspacial.unidades.internacional.longitud;
 
 import sondaEspacial.magnitudes.MagnitudFisica;
 import sondaEspacial.magnitudes.fundamentales.Longitud;
+import sondaEspacial.sistemas.internacional.Internacional;
 import sondaEspacial.unidades.ingles.longitud.Pie;
 import sondaEspacial.utils.exceptions.IncompatibleMagnitudeException;
 
@@ -32,6 +33,7 @@ public class Metro extends Longitud {
      */
     public Metro(double cifra) {
         super(cifra, "m");
+        setSistema(Internacional.getInstance());
     }
 
     /**
