@@ -148,4 +148,14 @@ public class KilometroXHora extends Velocidad {
         return convertirAMxSeg();
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Velocidad o) {
+        if (!compararInstancia(o))
+            o = ((MetroXSegundo) o.convertirInglesAInter()).convertirAKmxH();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

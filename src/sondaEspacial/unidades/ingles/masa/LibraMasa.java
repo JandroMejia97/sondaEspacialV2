@@ -102,4 +102,14 @@ public class LibraMasa extends Masa {
         return new Kilogramo(getCifra() * LibraMasa.F_CONV_A_KG);
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Masa o) {
+        if (!compararInstancia(o))
+            o = (LibraMasa) o.convertirInterAIngles();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

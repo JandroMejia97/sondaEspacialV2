@@ -81,4 +81,15 @@ public class Segundo extends Tiempo {
     public MagnitudFisica convertirInglesAInter() {
         return this;
     }
+
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Tiempo o) {
+        if (!compararInstancia(o))
+            o = (Segundo) o.convertirInglesAInter();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

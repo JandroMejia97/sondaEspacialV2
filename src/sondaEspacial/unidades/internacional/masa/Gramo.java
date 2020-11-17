@@ -96,4 +96,14 @@ public class Gramo extends Masa {
         return convertirAKg();
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Masa o) {
+        if (!compararInstancia(o))
+            o = ((Kilogramo) o.convertirInglesAInter()).convertirAG();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

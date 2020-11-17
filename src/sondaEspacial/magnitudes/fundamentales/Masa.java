@@ -6,7 +6,7 @@ import sondaEspacial.magnitudes.MagnitudFisica;
  * Representa la masa como magnitud física fundamental.
  * @author Carlos Alejandro Hernández Mejía
  */
-public abstract class Masa extends Fundamental {
+public abstract class Masa extends Fundamental implements Comparable<Masa> {
 
     /**
      * Constructor con parámetros.

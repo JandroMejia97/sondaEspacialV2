@@ -6,7 +6,7 @@ import sondaEspacial.magnitudes.MagnitudFisica;
  * Representa el area como magnitud física derivada.
  * @author Carlos Alejandro Hernández Mejía
  */
-public abstract class Area extends Derivada {
+public abstract class Area extends Derivada implements Comparable<Area> {
 
     /**
      * Constructor con parámetros.

@@ -141,4 +141,14 @@ public class PieXSegundo extends Velocidad {
         return new MetroXSegundo(getCifra() * PieXSegundo.F_CONV_A_MxS);
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Velocidad o) {
+        if (!compararInstancia(o))
+            o = (PieXSegundo) o.convertirInglesAInter();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

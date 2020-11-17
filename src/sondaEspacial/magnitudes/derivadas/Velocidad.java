@@ -6,7 +6,7 @@ import sondaEspacial.magnitudes.MagnitudFisica;
  * Representa la velocidad como magnitud física derivada.
  * @author Carlos Alejandro Hernández Mejía
  */
-public abstract class Velocidad extends Derivada {
+public abstract class Velocidad extends Derivada implements Comparable<Velocidad> {
 
     /**
      * Constructor con parámetros.

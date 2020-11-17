@@ -6,7 +6,7 @@ import sondaEspacial.magnitudes.MagnitudFisica;
  * Representa el tiempo como magnitud física fundamental.
  * @author Carlos Alejandro Hernández Mejía
  */
-public abstract class Tiempo extends Fundamental {
+public abstract class Tiempo extends Fundamental implements Comparable<Tiempo> {
 
     /**
      * Constructor con parámetros.

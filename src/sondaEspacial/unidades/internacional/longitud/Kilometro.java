@@ -100,4 +100,14 @@ public class Kilometro extends Longitud {
         return convertirAMetro();
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Longitud o) {
+        if (!compararInstancia(o))
+            o = ((Metro) o.convertirInglesAInter()).convertirAKilometro();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

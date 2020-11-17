@@ -151,4 +151,14 @@ public class MetroXSegundo extends Velocidad {
         return this;
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Velocidad o) {
+        if (!compararInstancia(o))
+            o = (MetroXSegundo) o.convertirInglesAInter();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

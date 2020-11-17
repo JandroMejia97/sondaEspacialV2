@@ -96,4 +96,14 @@ public class Onza extends Masa {
         return convertirALb().convertirInglesAInter();
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Masa o) {
+        if (!compararInstancia(o))
+            o = ((LibraMasa) o.convertirInterAIngles()).convertirAOz();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

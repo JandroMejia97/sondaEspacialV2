@@ -97,4 +97,14 @@ public class Pulgada extends Longitud {
         return convertirAPie().convertirInglesAInter();
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Longitud o) {
+        if (!compararInstancia(o))
+            o = ((Pie) o.convertirInterAIngles()).convertirAPulg();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

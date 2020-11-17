@@ -102,4 +102,14 @@ public class Pie extends Longitud {
         return new Metro(getCifra() * Pie.F_CONV_A_METRO);
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Longitud o) {
+        if (!compararInstancia(o))
+            o = (Longitud) o.convertirInterAIngles();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

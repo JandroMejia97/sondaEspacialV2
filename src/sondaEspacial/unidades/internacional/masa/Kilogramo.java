@@ -102,4 +102,15 @@ public class Kilogramo extends Masa {
         return this;
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Masa o) {
+        if (!compararInstancia(o))
+            o = (Kilogramo) o.convertirInglesAInter();
+        return (int) (getCifra() - o.getCifra());
+    }
+
 }

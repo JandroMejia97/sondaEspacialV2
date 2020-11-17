@@ -1,14 +1,14 @@
 package sondaEspacial.magnitudes;
 
 import sondaEspacial.unidades.UnidadDeMedida;
-import sondaEspacial.utils.interfaces.Conversor;
 import sondaEspacial.utils.exceptions.IncompatibleMagnitudeException;
+import sondaEspacial.utils.interfaces.Conversor;
 
 /**
  * Representa una generalización de una unidad de medida.
  * @author Carlos Alejandro Hernández Mejía
  */
-public abstract class MagnitudFisica extends UnidadDeMedida implements Conversor, Comparable<MagnitudFisica> {
+public abstract class MagnitudFisica extends UnidadDeMedida implements Conversor {
 
     /**
      * Cifra que representa la magnitud física.
@@ -44,14 +44,6 @@ public abstract class MagnitudFisica extends UnidadDeMedida implements Conversor
 
     public void setAbreviatura(String abreviatura) {
         this.abreviatura = abreviatura;
-    }
-
-    /**
-     * @param obj Objeto a comparar.
-     * @return El resultado de la comparación.
-     */
-    public int compareTo(MagnitudFisica obj) {
-        return (int) (getCifra() - obj.getCifra());
     }
 
     /**

@@ -102,4 +102,14 @@ public class Metro extends Longitud {
         return this;
     }
 
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Longitud o) {
+        if (!compararInstancia(o))
+            o = (Metro) o.convertirInglesAInter();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

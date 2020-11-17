@@ -6,7 +6,7 @@ import sondaEspacial.magnitudes.MagnitudFisica;
  * Representa la longitud como magnitud física fundamental.
  * @author Carlos Alejandro Hernández Mejía
  */
-public abstract class Longitud extends Fundamental {
+public abstract class Longitud extends Fundamental  implements Comparable<Longitud> {
 
     /**
      * Constructor con parámetros.

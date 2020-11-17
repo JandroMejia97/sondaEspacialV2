@@ -81,4 +81,15 @@ public class Hora extends Tiempo {
     public MagnitudFisica convertirInglesAInter() {
         return convertirASeg();
     }
+
+    /**
+     * @param o Objeto a comparar.
+     * @return El resultado de la comparación.
+     */
+    @Override
+    public int compareTo(Tiempo o) {
+        if (!compararInstancia(o))
+            o = ((Segundo) o.convertirInglesAInter()).convertirAHora();
+        return (int) (getCifra() - o.getCifra());
+    }
 }

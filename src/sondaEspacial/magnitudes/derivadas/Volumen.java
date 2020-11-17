@@ -6,7 +6,7 @@ import sondaEspacial.magnitudes.MagnitudFisica;
  * Representa el volumen como magnitud física derivada.
  * @author Carlos Alejandro Hernández Mejía
  */
-public abstract class Volumen extends Derivada {
+public abstract class Volumen extends Derivada implements Comparable<Volumen> {
 
     /**
      * Constructor con parámetros.
