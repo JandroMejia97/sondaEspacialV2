@@ -2,6 +2,7 @@ package sondaEspacial.sistemas;
 
 import sondaEspacial.unidades.UnidadDeMedida;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,6 +26,7 @@ public abstract class Sistema {
      */
     public Sistema(String nombre) {
         this.nombre = nombre;
+        unidades = new ArrayList<>();
     }
 
     public String getNombre() {
