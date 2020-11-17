@@ -30,6 +30,7 @@ public class Centimetro extends Longitud {
     public Centimetro(double cifra) {
         super(cifra, "cm");
         setSistema(Internacional.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

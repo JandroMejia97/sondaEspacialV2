@@ -28,6 +28,7 @@ public class Onza extends Masa {
     public Onza(double cifra) {
         super(cifra, "oz");
         setSistema(Ingles.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

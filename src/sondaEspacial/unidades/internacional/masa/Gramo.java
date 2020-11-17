@@ -28,6 +28,7 @@ public class Gramo extends Masa {
     public Gramo(double cifra) {
         super(cifra, "g");
         setSistema(Internacional.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

@@ -34,6 +34,7 @@ public class Pie extends Longitud {
     public Pie(double cifra) {
         super(cifra, "ft");
         setSistema(Ingles.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

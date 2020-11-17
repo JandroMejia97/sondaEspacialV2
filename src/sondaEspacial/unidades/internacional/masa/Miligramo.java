@@ -28,6 +28,7 @@ public class Miligramo extends Masa {
     public Miligramo(double cifra) {
         super(cifra, "mg");
         setSistema(Internacional.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

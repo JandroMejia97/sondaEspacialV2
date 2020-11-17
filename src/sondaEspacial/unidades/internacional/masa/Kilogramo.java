@@ -34,6 +34,7 @@ public class Kilogramo extends Masa {
     public Kilogramo(double cifra) {
         super(cifra, "kg");
         setSistema(Internacional.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

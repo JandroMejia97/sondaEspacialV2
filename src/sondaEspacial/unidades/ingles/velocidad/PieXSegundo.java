@@ -36,6 +36,7 @@ public class PieXSegundo extends Velocidad {
     public PieXSegundo(double cifra) {
         super(cifra, "ft/s");
         setSistema(Ingles.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

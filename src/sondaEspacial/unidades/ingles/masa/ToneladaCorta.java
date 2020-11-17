@@ -28,6 +28,7 @@ public class ToneladaCorta extends Masa {
     public ToneladaCorta(double cifra) {
         super(cifra, "ton");
         setSistema(Ingles.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

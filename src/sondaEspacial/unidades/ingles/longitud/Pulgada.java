@@ -29,6 +29,7 @@ public class Pulgada extends Longitud {
     public Pulgada(double cifra) {
         super(cifra, "in");
         setSistema(Ingles.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

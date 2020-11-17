@@ -34,6 +34,7 @@ public class LibraMasa extends Masa {
     public LibraMasa(double cifra) {
         super(cifra, "lbm");
         setSistema(Ingles.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

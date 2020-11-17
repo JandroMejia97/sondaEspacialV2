@@ -30,6 +30,7 @@ public class Kilometro extends Longitud {
     public Kilometro(double cifra) {
         super(cifra, "km");
         setSistema(Internacional.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

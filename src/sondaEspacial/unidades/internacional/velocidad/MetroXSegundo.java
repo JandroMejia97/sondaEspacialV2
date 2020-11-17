@@ -42,6 +42,7 @@ public class MetroXSegundo extends Velocidad {
     public MetroXSegundo(double cifra) {
         super(cifra, "m/s");
         setSistema(Internacional.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

@@ -35,6 +35,7 @@ public class KilometroXHora extends Velocidad {
     public KilometroXHora(double cifra) {
         super(cifra, "km/h");
         setSistema(Internacional.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**

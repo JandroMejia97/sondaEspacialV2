@@ -28,6 +28,7 @@ public class Yarda extends Longitud {
     public Yarda(double cifra) {
         super(cifra, "yd");
         setSistema(Ingles.getInstance());
+        getSistema().agregarUnidad(this);
     }
 
     /**
